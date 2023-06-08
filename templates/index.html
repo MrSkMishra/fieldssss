@@ -23,8 +23,10 @@
     <input type="text" id="qualification" name="qualification" required><br>
 
     <div id="company-container"></div>
+    <div id="qualification-container"></div>
 
     <button type="button" onclick="addCompany()">Add More</button>
+    <button type="button" onclick="addqualification()">Add Qualification</button>
 
     <br><br>
     <input type="submit" value="Submit">
@@ -40,6 +42,10 @@
     }
     function rem(a){
         $(a).parent().remove();
+    }
+
+    function addqualification(){
+      var container = $('#qualification-container').append(`<div><input type="text" name="course" placeholder="course"><button type="button" onclick="rem(this)">Remove</button></div>`);
     }
   </script>
 </body>

@@ -21,5 +21,4 @@ from fieldssapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomeView.as_view(),name="home"),
-    path('',atul,name="nothing"),
     ]
